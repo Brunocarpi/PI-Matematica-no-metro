@@ -1,14 +1,14 @@
 const perguntas = [
-    { pergunta: "Qual é o resultado de 2 + 2?", respostaCorreta: 4 },
-    { pergunta: "Qual é a raiz quadrada de 81?", respostaCorreta: 9 },
-    { pergunta: "Resolva: 12 x 12", respostaCorreta: 144 },
-    { pergunta: "Qual é o valor de π (pi) arredondado para duas casas decimais?", respostaCorreta: 3.14 },
-    { pergunta: "Qual é o valor de 2^10?", respostaCorreta: 1024 },
-    { pergunta: "Resolva: 7 + 3 x (10 ÷ 2)", respostaCorreta: 22 },
-    { pergunta: "Qual é a derivada de x^2?", respostaCorreta: 2 }, 
-    { pergunta: "Qual é o logaritmo de 1000 na base 10?", respostaCorreta: 3 },
-    { pergunta: "Resolva: 5! (fatorial de 5)", respostaCorreta: 120 },
-];
+        { pergunta: "Qual é o resultado de 2 + 2?", respostaCorreta: 4 },
+        { pergunta: "Qual é a raiz quadrada de 81?", respostaCorreta: 9 },
+        { pergunta: "Resolva: 10 x 10", respostaCorreta: 100 },
+        { pergunta: "Qual é o dobro de 6?", respostaCorreta: 12 },
+        { pergunta: "Qual é o resultado de 10 ÷ 2?", respostaCorreta: 5 },
+        { pergunta: "Resolva: 25 + 25", respostaCorreta: 50 },
+        { pergunta: "Quanto é 50% de 20?", respostaCorreta: 10 },
+        { pergunta: "Qual é a área de um quadrado com lados de 4 cm?", respostaCorreta: 16 },
+        { pergunta: "Se você tem um desconto de 10% em um produto que custa 50 reais, quanto você paga?", respostaCorreta: 45 }
+    ];
 
 function carregarPerguntas() {
     const container = document.getElementById('perguntas-container');

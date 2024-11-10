@@ -23,8 +23,8 @@ body::before {
 
 .login-container {
     width: 100%;
-    max-width: 400px;
-    padding: 2rem;
+    max-width: 500px; 
+    padding: 3rem;
     background-color: #ffffff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -54,7 +54,7 @@ body::before {
 .login-container input[type="email"],
 .login-container input[type="password"] {
     width: 100%;
-    padding: 0.8rem;
+    padding: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -71,12 +71,12 @@ body::before {
 
 .login-container button {
     width: 100%;
-    padding: 0.8rem;
+    padding: 1rem;
     background-color: #003b64;
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
