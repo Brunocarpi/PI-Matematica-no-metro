@@ -82,7 +82,6 @@
            </script>
 
     <title>Estações de Metrô Próximas</title>
-    <!-- Substitua SUA_CHAVE_DE_API_AQUI pela sua chave de API -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHE632ab9u-GRkZdXdQWffldL2ygoaXSY&libraries=places"></script>
 </head>
 <body>
@@ -90,56 +89,15 @@
     <div id="map" style="height:400px;width:100%;"></div>
     <div id="status-metro"></div>
 
+    <script src="../js/mapa.js"></script>
     <script>
-        function initMap() {
-            var sacoma = { lat: -23.5895, lng: -46.5913 }; 
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: sacoma
-            });
-
-            var service = new google.maps.places.PlacesService(map);
-            var request = {
-                location: sacoma,
-                radius: '2000', 
-                type: ['subway_station'] 
-            };
-
-            service.nearbySearch(request, function(results, status) {
-                if (status === google.maps.places.PlacesServiceStatus.OK) {
-                    let statusHTML = '<h3>Estações Encontradas:</h3>';
-                    results.forEach(station => {
-                       
-                        new google.maps.Marker({
-                            position: station.geometry.location,
-                            map: map,
-                            title: station.name
-                        });
-                        
-                        statusHTML += `<p>Estação: ${station.name} - Endereço: ${station.vicinity}</p>`;
-                    });
-                    document.getElementById('status-metro').innerHTML = statusHTML;
-                } else {
-                    document.getElementById('status-metro').innerHTML = 'Nenhuma estação encontrada.';
-                }
-            });
+        function toggleMenu() {
+            var nav = document.querySelector('nav ul');
+            nav.style.display = (nav.style.display === 'block') ? 'none' : 'block';
         }
-
-      
         window.onload = initMap;
-        </script>
-        <script>
-            function toggleMenu() {
-                var nav = document.querySelector('nav ul');
-                if (nav.style.display === 'block') {
-                    nav.style.display = 'none';
-                } else {
-                    nav.style.display = 'block';
-                }
-            }
-        const daltonismoSelect = document.getElementById('daltonismo-select');
-
-        </script>
+    </script>
+    
         <script src="../js/acessibilidade.js"></script>
 
     <footer style="background-color: #003b64; color: #fff; padding: 40px 0;">

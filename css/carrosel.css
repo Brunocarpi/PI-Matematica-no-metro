@@ -1,18 +1,12 @@
 .carrossel {
-    
     max-width: 100%;
     margin-inline: auto;
     position: relative;
     height: 40rem; 
-    overflow: hidden;
-  
-       
+    overflow: hidden;      
 }
 
-
-
-.item {
-    
+.item {  
     width: 50rem;
     height: 40rem; 
     margin-right: 1rem;
@@ -22,8 +16,7 @@
     animation-name: scrollLeft;
     animation-duration: 30s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    
+    animation-iteration-count: infinite;    
 }
 
 .item1 {
@@ -33,6 +26,7 @@
     background-repeat: no-repeat; 
     background-position: center;    
 }
+
 .item2 {
     animation-delay: calc(30s / 4 * (4 - 2) * -1);
    background-image:url(../images/metro1.png);
@@ -40,6 +34,7 @@
     background-repeat: no-repeat; 
     background-position: center;    
 }
+
 .item3 {
     animation-delay: calc(30s / 4 * (4 - 3) * -1);
    background-image:url(../images/metro2.png);
@@ -47,6 +42,7 @@
     background-repeat: no-repeat; 
     background-position: center;    
 }
+
 .item4 {
     animation-delay: calc(30s / 4 * (4 - 4) * -1);
    background-image:url(../images/metro3.png);
@@ -54,7 +50,6 @@
     background-repeat: no-repeat; 
     background-position: center;    
 }
-
 
 @keyframes scrollLeft {
     to {
