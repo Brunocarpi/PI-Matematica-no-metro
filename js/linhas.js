@@ -5,7 +5,7 @@ let directionsRenderer;
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
-        center: {lat: -23.5895, lng: -46.5913} // Estação Sacomã
+        center: {lat: -23.5895, lng: -46.5913} 
     });
 
     directionsService = new google.maps.DirectionsService();
