@@ -12,12 +12,23 @@
     
 
     <style>
-          h2 {
-            font-weight: bold;
-            text-align: center;
-            margin: 10px 0;
-            font-size: 1.2em;           
-        }
+    
+    h2 {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #003b64;
+    background-color: #f0f8ff; /* Fundo mais suave */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
+}
+h2:hover {
+    transform: scale(1.05); /* Efeito de leve aumento ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+}
     </style>
 </head>
 <body>
@@ -82,10 +93,10 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
        </script>
 
-    <title>Estações de Metrô Próximas</title>
+    
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHE632ab9u-GRkZdXdQWffldL2ygoaXSY&libraries=places"></script>
 </head>
-    <h2>Estações de Metrô afiliadas</h2>
+    <h2>Estações de Metrô Afiliadas</h2>
     <div id="map" style="height:400px;width:100%;"></div>
     <div id="status-metro"></div>
 
@@ -136,7 +147,7 @@
         window.onload = initMap;
     </script>
 
-    <footer style="background-color: #003b64; color: #fff; padding: 40px 0;">
+    <footer style="background-color: #003b64; color: #fff; padding: 15px 0;">
         <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1000px; margin: 0 auto;">
     
            
