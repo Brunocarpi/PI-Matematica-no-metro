@@ -24,13 +24,15 @@ function exibirEstatistica() {
     const porcentagemErros = (100 - porcentagemAcertos).toFixed(2);
 
     const estatisticaDiv = document.createElement('div');
+    estatisticaDiv.className = 'estatisticas-container';
     estatisticaDiv.innerHTML = `
         <h3>Estatísticas</h3>
-        <p>Você acertou ${acertos} de ${totalPerguntas} perguntas.</p>
-        <p>Porcentagem de acertos: ${porcentagemAcertos}%</p>
-        <canvas id="graficoPizza" width="150" height="150"></canvas>`;
+        <p>Você acertou <strong>${acertos}</strong> de <strong>${totalPerguntas}</strong> perguntas.</p>
+        <p>Porcentagem de acertos: <strong>${porcentagemAcertos}%</strong></p>
+        <canvas id="graficoPizza" width="200" height="200"></canvas>`;
 
     document.getElementById('perguntas-container').appendChild(estatisticaDiv);
+
 
     const ctx = document.getElementById('graficoPizza').getContext('2d');
     new Chart(ctx, {
@@ -40,13 +42,20 @@ function exibirEstatistica() {
             datasets: [{
                 data: [porcentagemAcertos, porcentagemErros],
                 backgroundColor: ['#4CAF50', '#FF0000'],
+                hoverBackgroundColor: ['#388E3C', '#D32F2F'],
             }]
         },
         options: {
-            responsive: false,
+            responsive: true,
             plugins: {
                 legend: {
                     position: 'top',
+                    labels: {
+                        font: {
+                            size: 14,
+                        },
+                        color: '#333',
+                    },
                 },
                 tooltip: {
                     callbacks: {

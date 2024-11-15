@@ -5,37 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/linhas.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Linhas do Metrô</title>
-
-    <style>
-        
-    .highlight {
-        font-weight: bold;
-        text-align: center;
-        margin: 10px 0;
-        font-size: 1.2em;
-        color: #003b64;
-        background-color: #f0f8ff; /* Fundo mais suave */
-        padding: 10px 20px; /* Espaçamento interno */
-        border-radius: 5px; /* Bordas arredondadas */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-        transition: transform 0.3s, box-shadow 0.3s; /* Transição suave */
-        }
-
-    .highlight:hover {
-        transform: scale(1.05); /* Efeito de leve aumento ao passar o mouse */
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
-        }
-
-    h2 {
-        background-color: #003b64;
-        padding: 20px;
-        text-align: center;
-        color: white;
-        }
-        
-    </style>
     
 </head>
 <body>
@@ -106,67 +78,88 @@
         <img src="../images/imagem_metro.png"
             alt="Mapa detalhado das linhas do Metrô de São Paulo, mostrando as conexões entre as linhas azul, verde, vermelha, amarela e lilás."
             class="line-map">
-        <h2 class="highlight">Descubra as linhas disponíveis no Metrô de São Paulo e as estações que cada uma cobre.</h2>
+        <h2>Descubra as linhas disponíveis no Metrô de São Paulo e as estações que cada uma cobre.</h2>
     </section>
-    <p>1. Linha Azul (Linha 1)
-        Cor: Azul
-        Extensão: 25 km
-        Estações: 20
-        Principais Paradas:
-        Estação Central: Conexão com outras linhas e principais pontos de ônibus.
-        Estação Universidade: Localizada próximo à maior universidade da cidade.
-        Estação Aeroporto: Conecta diretamente ao aeroporto internacional.
-        Horário de Funcionamento: Das 5h às 00h30, com trens a cada 4 minutos no horário de pico.
-        Curiosidade: Esta é a linha mais antiga do sistema, inaugurada há 40 anos, sendo conhecida por suas estações históricas e arquitetura clássica.
-       
-    </p>2. Linha Vermelha (Linha 2)
-        Cor: Vermelha
-        Extensão: 30 km
-        Estações: 25
-        Principais Paradas:
-        Estação Estádio: Parada próxima ao principal estádio de futebol da cidade.
-        Estação Mercado: Conecta diretamente à área comercial mais movimentada.
-        Estação Praça do Sol: Ponto turístico famoso, cercado por restaurantes e lojas.
-        Horário de Funcionamento: Das 5h às 1h, com maior frequência nos horários de eventos especiais, como jogos de futebol.
-        Curiosidade: Essa linha é a mais movimentada, transportando mais de 1 milhão de passageiros por dia, especialmente em eventos esportivos.</p>
-        </p>3. Linha Verde (Linha 3)
-        Cor: Verde
-        Extensão: 22 km
-        Estações: 18
-        Principais Paradas:
-        Estação Parque Central: Entrada principal para o maior parque urbano da cidade.
-        Estação Hospital: Localizada próxima a um grande complexo hospitalar.
-        Estação Centro Histórico: Facilita o acesso ao centro histórico e aos museus mais importantes.
-        Horário de Funcionamento: Das 4h30 às 23h45, com trens a cada 5 minutos nos horários de pico.
-        Curiosidade: Esta linha foi a primeira a ter vagões de metrô 100% elétricos, com zero emissões de carbono.</p>
+
+    <p class="linha-info">
+        <span class="titulo">1. Linha Azul (Linha 1)</span><br>
+        <span class="info-basica">Cor: Azul | Extensão: 25 km | Estações: 20</span><br>
         
-        <p>4. Linha Amarela (Linha 4)
-        Cor: Amarelo
-        Extensão: 18 km
-        Estações: 15
-        Principais Paradas:
-        Estação Shopping: Acesso direto ao maior shopping center da cidade.
-        Estação Universidade Norte: Atende outra grande universidade localizada na região norte.
-        Estação Jardim Botânico: Parada que leva ao principal jardim botânico, uma área turística e de lazer.
-        Horário de Funcionamento: Das 6h às 23h, com trens a cada 6 minutos.
-        Curiosidade: A Linha Amarela foi a primeira a testar o sistema de trens sem condutor, utilizando automação total em seus vagões.</p>
+        <span class="subtitulo">Principais Paradas:</span>
+        <ul class="paradas">
+            <li>Estação Central: Conexão com outras linhas e principais pontos de ônibus.</li>
+            <li>Estação Universidade: Localizada próximo à maior universidade da cidade.</li>
+            <li>Estação Aeroporto: Conecta diretamente ao aeroporto internacional.</li>
+        </ul>
         
-        <p>5. Linha Roxa (Linha 5)
-        Cor: Roxo
-        Extensão: 15 km
-        Estações: 12
-        Principais Paradas:
-        Estação Bairro Novo: Conecta-se a um novo bairro residencial.
-        Estação Palácio: Fica ao lado do principal centro administrativo da cidade.
-        Estação Marina: Parada que dá acesso à marina da cidade e ao litoral.
-        Horário de Funcionamento: Das 5h30 às 00h, com trens a cada 7 minutos nos horários normais.
-        Curiosidade: A linha roxa é a mais nova do sistema, inaugurada há apenas 5 anos, com trens modernos e estações projetadas com um design futurista.</p>
+        <p class="horario">Horário de Funcionamento: Das 5h às 00h30, com trens a cada 4 minutos no horário de pico.</p>
+        <p class="curiosidade">Curiosidade: Esta é a linha mais antiga do sistema, inaugurada há 40 anos, sendo conhecida por suas estações históricas e arquitetura clássica.</p>
+    </p>
+
+    <p class="linha-info">
+        <span class="titulo">2. Linha Vermelha (Linha 2)</span><br>
+        <span class="info-basica">Cor: Vermelha | Extensão: 30 km | Estações: 25</span><br>
+        
+        <span class="subtitulo">Principais Paradas:</span>
+        <ul class="paradas">
+            <li>Estação Estádio: Parada próxima ao principal estádio de futebol da cidade.</li>
+            <li>Estação Mercado: Conecta diretamente à área comercial mais movimentada.</li>
+            <li>Estação Praça do Sol: Ponto turístico famoso, cercado por restaurantes e lojas.</li>
+        </ul>
+        
+        <p class="horario">Horário de Funcionamento: Das 5h às 1h, com maior frequência nos horários de eventos especiais, como jogos de futebol.</p>
+        <p class="curiosidade">Curiosidade: Essa linha é a mais movimentada, transportando mais de 1 milhão de passageiros por dia, especialmente em eventos esportivos.</p>
+    </p>
+
+    <p class="linha-info">
+        <span class="titulo">3. Linha Verde (Linha 3)</span><br>
+        <span class="info-basica">Cor: Verde | Extensão: 22 km | Estações: 18</span><br>
+        
+        <span class="subtitulo">Principais Paradas:</span>
+        <ul class="paradas">
+            <li>Estação Parque Central: Entrada principal para o maior parque urbano da cidade.</li>
+            <li>Estação Hospital: Localizada próxima a um grande complexo hospitalar.</li>
+            <li>Estação Centro Histórico: Facilita o acesso ao centro histórico e aos museus mais importantes.</li>
+        </ul>
+        
+        <p class="horario">Horário de Funcionamento: Das 4h30 às 23h45, com trens a cada 5 minutos nos horários de pico.</p>
+        <p class="curiosidade">Curiosidade: Esta linha foi a primeira a ter vagões de metrô 100% elétricos, com zero emissões de carbono.</p>
+    </p>
+
+    <p class="linha-info">
+        <span class="titulo">4. Linha Amarela (Linha 4)</span><br>
+        <span class="info-basica">Cor: Amarelo | Extensão: 18 km | Estações: 15</span><br>
+        
+        <span class="subtitulo">Principais Paradas:</span>
+        <ul class="paradas">
+            <li>Estação Shopping: Acesso direto ao maior shopping center da cidade.</li>
+            <li>Estação Universidade Norte: Atende outra grande universidade localizada na região norte.</li>
+            <li>Estação Jardim Botânico: Parada que leva ao principal jardim botânico, uma área turística e de lazer.</li>
+        </ul>
+        
+        <p class="horario">Horário de Funcionamento: Das 6h às 23h, com trens a cada 6 minutos.</p>
+        <p class="curiosidade">Curiosidade: A Linha Amarela foi a primeira a testar o sistema de trens sem condutor, utilizando automação total em seus vagões.</p>
+    </p>
+     
+    <p class="linha-info">
+        <span class="titulo">5. Linha Roxa (Linha 5)</span><br>
+        <span class="info-basica">Cor: Roxo | Extensão: 15 km | Estações: 12</span><br>
+        
+        <span class="subtitulo">Principais Paradas:</span>
+        <ul class="paradas">
+            <li>Estação Bairro Novo: Conecta-se a um novo bairro residencial.</li>
+            <li>Estação Palácio: Fica ao lado do principal centro administrativo da cidade.</li>
+            <li>Estação Marina: Parada que dá acesso à marina da cidade e ao litoral.</li>
+        </ul>
+        
+        <p class="horario">Horário de Funcionamento: Das 5h30 às 00h, com trens a cada 7 minutos nos horários normais.</p>
+        <p class="curiosidade">Curiosidade: A linha roxa é a mais nova do sistema, inaugurada há apenas 5 anos, com trens modernos e estações projetadas com um design futurista.</p>
+    </p>
 
         <!DOCTYPE html>
         <html>
         <head>
             <title>Calcular Rotas de Metrô</title>
-            <!-- Substitua SUA_CHAVE_DE_API_AQUI pela sua chave de API -->
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHE632ab9u-GRkZdXdQWffldL2ygoaXSY&libraries=places"></script>
         </head>
         <body>

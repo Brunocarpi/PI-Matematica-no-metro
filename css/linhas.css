@@ -1,0 +1,135 @@
+.highlight {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #003b64;
+    background-color: #f0f8ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.highlight:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+    background-color: #003b64;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.linha-info {
+    padding: 20px;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    background-color: #f9f9f9;
+}
+
+
+.titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #003b64;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.info-basica {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+.subtitulo {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.paradas {
+    margin-left: 20px;
+    list-style-type: square;
+    color: #555;
+}
+
+
+.horario {
+    font-size: 1em;
+    color: #333;
+    padding: 8px;
+    background-color: #e8f4f8;
+    border-left: 4px solid #4CAF50;
+    margin-top: 10px;
+}
+
+.curiosidade {
+    font-size: 1em;
+    color: #333;
+    padding: 8px;
+    background-color: #fef8e8;
+    border-left: 4px solid #FF9800;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p.linha-info {
+    background-color: #f9f9f9; 
+    border-left: 5px solid #003b64; 
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+p.linha-info .titulo {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #003b64;
+    margin-bottom: 10px;
+}
+
+p.linha-info .info-basica {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+
+p.linha-info .subtitulo {
+    font-weight: bold;
+    color: #1286e6;
+    margin-top: 10px;
+}
+
+p.linha-info .paradas {
+    margin-left: 15px;
+    list-style-type: square;
+    color: #333;
+}
+
+
+p.linha-info .horario,
+p.linha-info .curiosidade {
+    margin-top: 10px;
+    font-style: italic;
+    color: #777;
+}
