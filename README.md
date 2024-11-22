@@ -5,5 +5,5 @@ Giulia Rita Sabella Damasceno 24.00921-0: Realizou os slides da apresentação.
 
 Leonardo Kazushi Hideshima 24.00229-0: Fez códigos que foram utilizados como base, como do mapa interativo, mas que precisaram ser completamente alterados ao longo do tempo.
 
-Rafael Pithon Suyeyassu 24.00584-3: Fez a base para o rodapé, fez as estatísticas da página de perguntas e aba de curiosidades.
+Rafael Pithon Suyeyassu 24.00584-3: Fez a base para o rodapé, fez as estatísticas da página de perguntas e a aba de curiosidades.
 
