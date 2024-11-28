@@ -11,9 +11,9 @@
   },
   "name": "pi",
   "version": "1.0.0",
-  "main": "js/backend.js",
-  "scripts": {
-    "start": "node backend.js",  
+  "main": "content/backend.js",
+"scripts": {
+    "start": "node content/backend.js", 
     "frontend": "live-server public"  
   },
   "keywords": [],
