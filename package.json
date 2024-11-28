@@ -1,17 +1,24 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.3",
     "color-blind": "^0.1.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.3",
     "postcss": "^8.4.47",
     "postcss-colorblind": "^0.1.0"
   },
   "name": "pi",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "js/backend.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend.js",  
+    "frontend": "live-server public"  
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Bruno Binaghi Carpi 24.00246-0: Programador backend, programador frontend, realizou a documentação, realizou o design, criou e implementou o banco de dados, criou e organizou o repositório, fez inúmeros ajustes gerais, criou todas as funções de acessibilidade \r (libras, daltonismo e audiodescrição), criou e complementou as páginas com todo o conteúdo necessário, estilizou as páginas, criou diversas funções JS, aplicou diversos conteúdos aprendidos nas aulas no projeto e implementou o bootstrap.",
+  "devDependencies": {}
 }
