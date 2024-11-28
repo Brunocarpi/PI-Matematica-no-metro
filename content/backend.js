@@ -20,6 +20,7 @@ const validEmail = 'admin5@gmail.com';
 const validPassword = 'metro5';
 
 
+
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
     try {
@@ -33,6 +34,30 @@ app.post('/login', async (req, res) => {
         res.json({ success: false, message: "Erro ao tentar fazer login." });
     }
 });
+
+
+const feedbackSchema = new mongoose.Schema({
+    name: { type: String, required: true },
+    email: { type: String, required: true },
+    message: { type: String, required: true },
+  });
+  
+  const Feedback = mongoose.model('Feedback', feedbackSchema);
+  
+  
+
+  app.post('/feedback', async (req, res) => {
+    const { name, email, message } = req.body;
+  
+    try {
+      const feedback = new Feedback({ name, email, message });
+      await feedback.save();
+      res.status(201).json({ success: true, message: "Feedback enviado com sucesso!" });
+    } catch (error) {
+      console.error('Erro ao salvar feedback:', error);
+      res.status(500).json({ success: false, message: "Erro ao enviar feedback." });
+    }
+  });
 
 
 app.listen(5000, () => {
