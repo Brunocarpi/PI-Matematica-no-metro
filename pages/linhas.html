@@ -71,7 +71,7 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
            </script>
 
-    
+
     <p class="highlight">Linhas do Metrô</p>
     <section id="lines">
 
@@ -94,6 +94,9 @@
         <p class="horario">Horário de Funcionamento: Das 5h às 00h30, com trens a cada 4 minutos no horário de pico.</p>
         <p class="curiosidade">Curiosidade: Esta é a linha mais antiga do sistema, inaugurada há 40 anos, sendo conhecida por suas estações históricas e arquitetura clássica.</p>
     </p>
+    <button class="audio-button"
+                    onclick="narrateText('Horário de Funcionamento: Das 5h às meia noite e trinta, com trens a cada 4 minutos no horário de pico. Curiosidade: Esta é a linha mais antiga do sistema, inaugurada há 40 anos, sendo conhecida por suas estações históricas e arquitetura clássica')">🔊
+                    Ouvir</button>
 
     <p class="linha-info">
         <span class="titulo">2. Linha Vermelha (Linha 2)</span><br>
@@ -106,9 +109,12 @@
             <li>Estação Praça do Sol: Ponto turístico famoso, cercado por restaurantes e lojas.</li>
         </ul>
         
-        <p class="horario">Horário de Funcionamento: Das 5h às 1h, com maior frequência nos horários de eventos especiais, como jogos de futebol.</p>
+        <p class="horario">Horário de Funcionamento: Das 5h às 13h, com maior frequência nos horários de eventos especiais, como jogos de futebol.</p>
         <p class="curiosidade">Curiosidade: Essa linha é a mais movimentada, transportando mais de 1 milhão de passageiros por dia, especialmente em eventos esportivos.</p>
     </p>
+    <button class="audio-button"
+                    onclick="narrateText('Horário de Funcionamento: Das 5h às 13h, com maior frequência nos horários de eventos especiais, como jogos de futebol. Curiosidade: Essa linha é a mais movimentada, transportando mais de 1 milhão de passageiros por dia, especialmente em eventos esportivos.')">🔊
+                    Ouvir</button>
 
     <p class="linha-info">
         <span class="titulo">3. Linha Verde (Linha 3)</span><br>
@@ -124,6 +130,9 @@
         <p class="horario">Horário de Funcionamento: Das 4h30 às 23h45, com trens a cada 5 minutos nos horários de pico.</p>
         <p class="curiosidade">Curiosidade: Esta linha foi a primeira a ter vagões de metrô 100% elétricos, com zero emissões de carbono.</p>
     </p>
+    <button class="audio-button"
+                    onclick="narrateText('Horário de Funcionamento: Das 4h30 às 23h45, com trens a cada 5 minutos nos horários de pico. Curiosidade: Esta linha foi a primeira a ter vagões de metrô 100% elétricos, com zero emissões de carbono.')">🔊
+                    Ouvir</button>
 
     <p class="linha-info">
         <span class="titulo">4. Linha Amarela (Linha 4)</span><br>
@@ -139,6 +148,9 @@
         <p class="horario">Horário de Funcionamento: Das 6h às 23h, com trens a cada 6 minutos.</p>
         <p class="curiosidade">Curiosidade: A Linha Amarela foi a primeira a testar o sistema de trens sem condutor, utilizando automação total em seus vagões.</p>
     </p>
+    <button class="audio-button"
+                    onclick="narrateText('Horário de Funcionamento: Das 6h às 23h, com trens a cada 6 minutos. Curiosidade: A Linha Amarela foi a primeira a testar o sistema de trens sem condutor, utilizando automação total em seus vagões.')">🔊
+                    Ouvir</button>
      
     <p class="linha-info">
         <span class="titulo">5. Linha Roxa (Linha 5)</span><br>
@@ -154,6 +166,18 @@
         <p class="horario">Horário de Funcionamento: Das 5h30 às 00h, com trens a cada 7 minutos nos horários normais.</p>
         <p class="curiosidade">Curiosidade: A linha roxa é a mais nova do sistema, inaugurada há apenas 5 anos, com trens modernos e estações projetadas com um design futurista.</p>
     </p>
+    <button class="audio-button"
+                    onclick="narrateText('Horário de Funcionamento: Das 5h30 às meia noite, com trens a cada 7 minutos nos horários normais. Curiosidade: A linha roxa é a mais nova do sistema, inaugurada há apenas 5 anos, com trens modernos e estações projetadas com um design futurista.')">🔊
+                    Ouvir</button>
+
+        <script>
+        function narrateText(text) {
+            const speech = new SpeechSynthesisUtterance(text);
+            speech.lang = 'pt-BR'; 
+            window.speechSynthesis.speak(speech);
+        }
+        </script>
+
 
         <!DOCTYPE html>
         <html>
