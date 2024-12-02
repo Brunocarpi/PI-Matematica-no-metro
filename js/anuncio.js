@@ -4,9 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     closeBtn.addEventListener("click", () => {
         popup.classList.remove("active");
+        // verifica se o usuário já fechou o anúncio
+        // localStorage.setItem("popupClosed", "true");
+        
     });
 
     setTimeout(() => {
         popup.classList.add("active");
     }, 2000);
 });
+
