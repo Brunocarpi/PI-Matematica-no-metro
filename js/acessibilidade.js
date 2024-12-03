@@ -11,4 +11,3 @@ daltonismoSelect.addEventListener('change', function() {
 document.body.classList.add(selectedClass);
 
 
-

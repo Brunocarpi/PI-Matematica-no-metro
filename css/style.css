@@ -259,12 +259,15 @@ input:checked+label {
 
 
 
-svg {
+svg1 {
+    margin: 0px;
+    padding: 0px;
     display: none;
 }
 
+ 
 #daltonismo-select {
-    position: fixed;
+    position: relative;
     top: 10px;
     right: 10px;
     z-index: 1000;
