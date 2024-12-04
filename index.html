@@ -114,9 +114,11 @@
                 O atendimento ocorre semanalmente, às segundas-feiras, das 16 horas até as 19:30, ele não apresenta
                 nenhuma data para o encerramento de suas atividades.</p>
 
-            <button class="audio-button"
-                onclick="narrateText('O projeto Matemática no Metrô é uma iniciativa educativa, desenvolvida no estado de São Paulo, fruto de uma parceria entre o Metrô Social, Instituto de Engenharia de São Paulo e o Instituto Mauá de Tecnologia. Seu principal objetivo é oferecer aulas de matemática gratuitas, voltadas para todos aqueles com dificuldades em cálculos e contas, e também para usuários do Metrô, de todas as idades, visando esclarecer questionamentos e reforçar os conhecimentos.')">🔊
-                Ouvir</button>
+                <button class="audio-button" id="narrate-btn" type="button">🔊 Ouvir</button>
+
+                <div id="text-to-narrate" style="display: none;">
+                    O projeto Matemática no Metrô é uma iniciativa educativa, desenvolvida no estado de São Paulo, fruto de uma parceria entre o Metrô Social, Instituto de Engenharia de São Paulo e o Instituto Mauá de Tecnologia. Seu principal objetivo é oferecer aulas de matemática gratuitas, voltadas para todos aqueles com dificuldades em cálculos e contas, e também para usuários do Metrô, de todas as idades, visando esclarecer questionamentos e reforçar os conhecimentos.
+                </div>
         </section>
         <script src="js/audio.js"></script>
         <script>

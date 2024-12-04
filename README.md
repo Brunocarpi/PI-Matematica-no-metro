@@ -1,5 +1,5 @@
-Bruno Binaghi Carpi 24.00246-0: Programador backend, programador frontend, realizou a documentação, realizou o design, criou e implementou o banco de dados, criou e organizou o repositório, fez inúmeros ajustes gerais, criou todas as funções de acessibilidade 
-(libras, daltonismo e audiodescrição), criou e complementou as páginas com todo o conteúdo necessário, estilizou as páginas, criou diversas funções JS, aplicou diversos conteúdos aprendidos nas aulas no projeto e implentou o bootstrap.
+Bruno Binaghi Carpi 24.00246-0: Programador backend, programador frontend, realizou a documentação, realizou o design, criou e implementou os bancos de dados, criou e organizou o repositório, fez inúmeros ajustes gerais, criou todas as funções de acessibilidade 
+(libras, daltonismo e audiodescrição), criou e complementou as páginas com todo o conteúdo necessário, estilizou as páginas, aplicou a responsividade, criou o pop-up junto da página de doação, criou a página de manutenção do site, criou diversas funções JS, aplicou diversos conteúdos aprendidos nas aulas no projeto e implentou o bootstrap.
 
 Giulia Rita Sabella Damasceno 24.00921-0: Realizou os slides da apresentação.
 
