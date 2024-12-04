@@ -56,10 +56,11 @@
     <header>
         <div class="logo-container">
             <img src="../images/logo_mat.png" alt="Logo Metrô de São Paulo" class="logo">
-            <h1>Metrô de São Paulo</h1>
+            <h1 class="titulometro">Metrô de São Paulo</h1>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">☰ Menu</div>
         <nav>
+            <i data-lucide="menu" class='menu-burguer' onclick="toggleMenu()"></i>
+            <div class="menu-links"></div>
             <ul>
                 <li><a href="../index.html"><img src="../images/home.png" alt="Home"></a></li>
                 <li><a href="linhas.html">Linhas</a></li>
@@ -69,6 +70,7 @@
                 <li><a href="feedback.html">Feedback</a></li>
                 <li><a href="login.html">Entrar</a></li>
             </ul>
+            </div>
         </nav>
     </header>
 
@@ -139,62 +141,71 @@
         window.onload = initMap;
     </script>
 
-    
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
-    <footer style="background-color: #003b64; color: #fff; padding: 15px 0;">
-        <div
-            style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1000px; margin: 0 auto;">
+    <div class="container-fluid">
+        <div class="row">
+
+            <footer style="background-color: #003b64; color: #fff; padding: 15px 0;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; max-width: 1000px; margin: 0 auto;">
 
 
-            <div style="text-align: left;" class="col-4">
-                <img src="../images/logo-IMT.png" alt="Logo Mauá"
-                    style="width: 110px; height: 80px; margin-bottom: 15px; object-fit: contain;"><br>
-                <img src="../images/metro4.png" alt="Logo Metro"
-                    style="width: 160px; height: 120px; margin-bottom: 15px; object-fit: contain;"><br>
-                <img src="../images/int_eng.webp" alt="Instituto de Engenharia"
-                    style="width: 73px; height: 150px; object-fit: contain;">
-            </div>
+                    <div class="imagem col" style="text-align: left;">
+                        <img src="../images/logo-IMT.png" alt="Logo Mauá"
+                            style="width: 110px; height: 80px; margin-bottom: 15px; object-fit: contain;"><br>
+                        <img src="../images/metro4.png" alt="Logo Metro"
+                            style="width: 160px; height: 120px; margin-bottom: 15px; object-fit: contain;"><br>
+                        <img src="../images/int_eng.webp" alt="Instituto de Engenharia"
+                            style="width: 73px; height: 150px; object-fit: contain;">
+                    </div>
 
 
-            <div style="flex: 1; min-width: 200px; padding-block: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;"
-                class="col-4">
-                <h3 style="color: #ffcc00; margin-bottom: 10px;">Instituto Mauá de Tecnologia</h3>
-                <p>Rua Bom Pastor, 3000 - São Paulo - SP</p>
-                <p>Horário de Funcionamento: 16:00 às 19:30</p>
-                <p>CEP: 04203-003</p>
-            </div>
 
-            <div style="min-width: 200px; padding-block: 50px; text-align: right;" class="col-4">
-                <h4 style="color: #ffcc00; margin-bottom: 10px;">Contato</h4>
-                <p style="text-align: right;">
-                    <img src="../images/telefone.png" alt="Ícone Telefone"
-                        style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
-                    Telefone: (11) 0800-7707722
-                </p>
-                <p style="text-align: right;">
-                    <img src="../images/email.png" alt="Ícone Email"
-                        style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
-                    E-mail: contato@metrosp.com.br
-                </p>
-                <p style="text-align: right;">
-                    <img src="../images/instagram.png" alt="Ícone Instagram"
-                        style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
-                    <a href="https://www.instagram.com/matematica_no_metro/"
-                        style="color: #fff; text-decoration: none;">Instagram</a>
-                </p>
-            </div>
+                    <div class="local col"
+                        style="flex: 1; min-width: 200px; padding-block: 50px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                        <h3 style="color: #ffcc00; margin-bottom: 10px;">Instituto Mauá de Tecnologia</h3>
+                        <p>Rua Bom Pastor, 3000 - São Paulo - SP</p>
+                        <p>Horário de Funcionamento: 16:00 às 19:30</p>
+                        <p>CEP: 04203-003</p>
+                    </div>
 
+
+                    <div class="contato col" style="min-width: 200px; padding-block: 50px; text-align: right;">
+                        <h4 style="color: #ffcc00; margin-bottom: 10px;">Contato</h4>
+                        <p style="text-align: right;">
+                            <img src="../images/telefone.png" alt="Ícone Telefone"
+                                style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                            Telefone: (11) 0800-7707722
+                        </p>
+                        <p style="text-align: right;">
+                            <img src="../images/email.png" alt="Ícone Email"
+                                style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                            E-mail: contato@metrosp.com.br
+                        </p>
+                        <p style="text-align: right;">
+                            <img src="../images/instagram.png" alt="Ícone Instagram"
+                                style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
+                            <a href="https://www.instagram.com/matematica_no_metro/"
+                                style="color: #fff; text-decoration: none;">Instagram</a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div
+                    style="text-align: center; padding-top: 10px; border-top: 1px solid #ffffff; margin-top: 20px; background-color: #003b64 ;">
+                    <p>&copy; 2024 Instituto Mauá de Tecnologia. Todos os direitos reservados</p>
+                </div>
+            </footer>
         </div>
-
-
-        <div style="text-align: center; padding-top: 10px; border-top: 1px solid #ffffff; margin-top: 20px;">
-            <p>&copy; 2024 Instituto Mauá de Tecnologia. Todos os direitos reservados</p>
-        </div>
-    </footer>
+    </div>
+    </div>
 </body>
 
 </html>
