@@ -6,6 +6,7 @@ body {
     color: #333;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -81,25 +82,28 @@ h1 {
 
 @media (max-width: 768px) {
     .hamburger {
-        display: block;
+        display: none; 
         font-size: 24px;
         cursor: pointer;
         padding: 10px;
-        background-color: #003b64; 
-        color: white; 
+        background-color: #003b64;
+        color: white;
         border-radius: 5px;
         text-align: center;
         margin: 10px 0;
     }
 }
+
 nav {
-    margin: 0;
-    padding: 0;
+    display: flex; 
+    justify-content: flex-start;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex; 
 }
 
 nav ul li {
@@ -147,10 +151,26 @@ footer {
 
 
 @media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column; 
+        width: 100%; 
+    }
+
+    
+    nav.active ul {
+        display: flex;
+    }
+
     nav ul li {
-        display: block;
+        display: block; 
         margin: 10px 0;
-        text-align: center;
+        text-align: center; 
+    }
+
+   
+    .hamburger {
+        display: block;
     }
 
     main {
